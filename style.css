@@ -1,0 +1,135 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Manrope", sans-serif;
+    color: white;
+}
+
+h3 {
+    color: black;
+    font-family: "Manrope", sans-serif;
+    
+}
+
+h4 {
+    background-color: #e46c6c;
+}
+
+h4:hover {
+    background-color: #ddb420;
+}
+
+header {
+    display: flex;
+    background-image: url(Matrix.jpg);
+    height: 80vh;
+    background-size:cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logoAulab {
+    width: 150px;
+    height: 100px;
+}
+
+
+.link {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.listLink {
+    display: flex;
+    list-style-type: none;
+}
+
+.link:hover  {
+    border-bottom: 1px solid black;
+}
+
+.titleArticle {
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+.imgArticle {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    width: 60%;
+}
+
+aside {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+}
+
+/* Non riesco a capire dove si trova l'errore, perchè l'immagine rimane invariata */
+.button img {
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+}
+
+.button img {
+    width: 45px;
+    height: 45px;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    
+    .logoAulab {
+        width: 150px;
+        height: 75px;
+    }
+    
+    .link {
+        font-size: small;
+        
+    }
+    main {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+}
